@@ -33,5 +33,4 @@
     - (I hate dealing with prompts on page load. It's very annoying when reloading, pressing cancel when you have a validation loop, etc)
   - Made it a modal with Bootstrap. Also made sure its static so clicking esc/on the background doesn't hide the modal. The init function is tied to the start button, so it needs to be pressed.
 - Added a PLAY AGAIN button on a win which clears the history and lets you choose a new max number and play again!
-- Included more comments than I usually would out of caution to be super explicit with my thinking
-- Included JSDoc comments for functions, you can hover over to see parameters and function purpose
+- Included JSDoc comments for functions, so you can hover over to see parameters and function purpose
