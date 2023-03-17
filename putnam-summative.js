@@ -15,9 +15,9 @@ const guess_btn = document.getElementById("guess-btn");
 const reset_btn = document.getElementById("reset-btn");
 
 // Preload modal for start game
-// window.onload = function () {
-//   $("#modal").modal("show");
-// };
+window.onload = function () {
+  $("#modal").modal("show");
+};
 
 // ####################### GAME PLAY #######################
 
