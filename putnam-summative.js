@@ -14,16 +14,18 @@ const input = document.getElementById("input");
 const guess_btn = document.getElementById("guess-btn");
 const reset_btn = document.getElementById("reset-btn");
 
+// ###################### Initial State ##################
+
+// Initialize game state variables
+const history = [];
+let max_num, answer;
+
 // Preload modal for start game
 window.onload = function () {
   $("#modal").modal("show");
 };
 
 // ####################### GAME PLAY #######################
-
-// Initialize game state variables
-const history = [];
-let max_num, answer;
 
 // Initialize gameplay on start click
 start_btn.addEventListener("click", init);
@@ -33,11 +35,15 @@ guess_btn.addEventListener("click", game_loop);
 reset_btn.addEventListener("click", init);
 
 /**
- * Gameplay loop on guess
+ * Gameplay loop on guess click
  * @returns {void}
  */
 function game_loop() {
+  // Don't allow empty input
+  if (input.value === "") return;
+  // Convert input string to number
   const guess = +input.value;
+  // Reset input value
   input.value = "";
 
   // Check for valid guess
@@ -71,6 +77,6 @@ function init() {
   input.disabled = false;
   history.length = 0;
   max_num = get_input();
-  instructions.textContent = `Guess a number between 1 and ${max_num}`;
+  instructions.textContent = new Intl.NumberFormat("en-US").format(max_num);
   answer = rng(max_num);
 }
