@@ -4,26 +4,26 @@
 
 - Prompt for Max Number
 
-  [x] Prompt user for max number
-  [x] Check user input for valid entries and reprompt with appropriate message
-  [x] Round floating point numbers to integers
-  [x] Select random number between 1 and provided number, inclusive
+  - Prompt user for max number
+  - Check user input for valid entries and reprompt with appropriate message
+  - Round floating point numbers to integers
+  - Select random number between 1 and provided number, inclusive
 
 - Validate Guess
 
-  [x] Prevent user from non-integer guesses with appropriate message
-  [x] Prevent user from guessing numbers below range with message
-  [x] Prevent user from guessing numbers above range with message
+  - Prevent user from non-integer guesses with appropriate message
+  - Prevent user from guessing numbers below range with message
+  - Prevent user from guessing numbers above range with message
 
 - Track guesses
 
-  [x] Initialize array and use push() to add to guess history
-  [x] Format win message to include comma-delimited guesses
-  [x] Uses length property to count guesses (don't put in variable :frowning_face:)
+  - Initialize array and use push() to add to guess history
+  - Format win message to include comma-delimited guesses
+  - Uses length property to count guesses (don't put in variable :frowning_face:)
 
 - Prevent Duplicate Guesses
-  [x] Check array for duplicate guess before adding to history
-  [x] Display message to indicate duplicate guess
+  - Check array for duplicate guess before adding to history
+  - Display message to indicate duplicate guess
 
 ## Extras
 
